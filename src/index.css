@@ -1,0 +1,163 @@
+*{
+  font-family: 'Merriweather', serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body text-paragraph leading-6 ;
+  }
+  .section {
+    @apply py-12 lg:py-32;
+  }
+  .section-title {
+    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5 ;
+  }
+  .subtitle {
+    @apply text-base text-paragraph mb-16 lg:mb-10 max-w-[720px];
+  }
+   .btn {
+    @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-accent-hover transition-all;
+   }
+   .btn-lg {
+    @apply h-[54px];
+  }
+  .input {
+    @apply bg-secondary text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1 focus:outline-accent;
+  }
+  .textarea {
+    @apply bg-secondary resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 focus:outline-accent;
+  }
+  .active {
+    @apply text-accent;
+  }
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+.section{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+} 
+
+#light{
+  background-color: white !important;
+}
+#dark{
+  background-color: black !important;
+  color: white;
+}
+#dark .ProfileShapeCut{
+  display: none;
+}
+#dark #home{
+  background-color: black;
+}
+
+.text-base{
+  font-size: 20px;
+}
+.chartmain{
+  display: grid;
+  grid-template-columns: 48% 2% 48%;
+  
+}
+.bardata{
+  border: 5px solid grey;
+  margin: 80px;
+  height: 550px;
+  padding: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+
+}
+.piedata{
+  border: 5px solid grey;
+  margin: 50px;
+  padding: 50px;
+  margin: 80px;
+  height: 550px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+
+}
+#dark .leftside{
+  border: 2px solid grey;
+  padding: 40px;
+  border-radius: 15px;
+}
+#dark .footer{
+  background-color: rgb(40, 35, 35);
+}
+.rollingdiv{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+
+
+/* profile */
+.ProfileShapeCut{
+  position:relative;
+  top:-100px
+}
+
+
+/* about */
+.about-heading{
+  margin: 30px;
+}
+
+
+@media screen and (max-device-width: 412px) {
+
+  .ProfileShapeCut{
+    position:relative;
+    top:-24px
+  }
+
+  .chartmain{
+      display: grid;
+      grid-template-columns: auto;
+      padding: 5px;
+      margin: 2px;
+  }
+  .bardata{
+    width: 350px;
+    border: 5px solid grey;
+    height: 400px;
+    padding: 5px;
+    margin: 2px;
+    margin-top: 20px;
+  }
+  .barchart{
+    width: 320px;
+
+  }
+  .piedata{
+    border: 5px solid grey;
+    width: 350px;
+    height: 440px;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 0px;
+  }
+  .piechart{
+    width: 350px;
+  }
+
+}
+.name{
+  width: 50px;
+}
+.pojects{
+  border: 2px solid crimson;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
